@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url("../../images/bg-vac.png") no-repeat #19191B;
+    background-size: cover;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 122px;
+}
+.section1 .wrapper {
+    max-width: 1440px;
+    width: 100%;
+}
+.section1__title {
+    margin-top: 9px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1__title h2 {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 58px;
+    line-height: 156px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.section1__title h2 img {
+    position: absolute;
+    top: 15px;
+    left: -140px;
+}
+.section1__title h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 156px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.02;
+    position: absolute;
+    top: 29px;
+}
+.section1__title .line {
+    background: #5454D4;
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 33px;
+}
+.section1__content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 70px;
+    grid-row-gap: 38px;
+    justify-content: center;
+}
+.section1__card {
+    width: 100%;
+    background: linear-gradient(360deg, #16181B 0%, rgba(22, 24, 27, 0) 70.26%);
+    filter: drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.16));
+    border-radius: 16px;
+    padding-top: 29px;
+    padding-bottom: 32px;
+}
+.section1__card.clicked {
+    background: url('../../images/bg-card.png') no-repeat,
+    linear-gradient(360deg, #16181B 0%, rgba(22, 24, 27, 0) 70.26%);
+    background-size: 100% 100%;
+}
+.section1__card:hover {
+    cursor: pointer;
+}
+.section1__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.section1__img .block {
+    position: absolute;
+    top: 11px;
+    right: 40px;
+    width: 100px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
+    border-radius: 8px;
+}
+.section1__vac {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 14px;
+    height: 44px;
+    background: rgba(153, 162, 213, 0.08);
+    backdrop-filter: blur(16px);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1__vac h4 {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.section1__bot {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.section1__bot .date p {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #758089;
+}
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+.section2 .wrapper {
+    max-width: 1440px;
+    width: 100%;
+}
+.section2__title {
+    padding-top: 72px;
+    padding-left: 176px;
+    position: relative;
+}
+.section2__title img {
+    position: absolute;
+    top: 0px;
+}
+.section2__title h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 58px;
+    line-height: 156px;
+    color: #FFFFFF;
+}
+.section2__title h1 b {
+    font-weight: 700;
+}
+.section2__subtitle {
+    padding-left: 176px;
+}
+.section2__subtitle h2 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 156px;
+    color: #FFFFFF;
+    position: relative;
+}
+.section2__subtitle h2 img {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.section2__list {
+    margin-top: 82px;
+    padding-left: 176px;
+    padding-right: 46px;
+}
+.section2__li {
+    display: flex;
+    padding-bottom: 72px;
+    position: relative;
+}
+.section2__li .img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.section2__li .left {
+    display: flex;
+    align-items: center;
+}
+.section2__li .left .line {
+    width: 80px;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.section2__li .left img {
+    margin-left: 8px;
+}
+.section2__li .right {
+    margin-left: 42px;
+}
+.section2__li .right p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.section2__text {
+    padding-left: 176px;
+    margin-top: 30px;
+}
+.section2__text p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+    position: relative;
+}
+.section2__text p img {
+    position: absolute;
+    left: -20px;
+    bottom: -80px;
+}
+.section3 {
+    display: flex;
+    justify-content: center;
+    background: #5454D4;
+}
+.section3 .wrapper {
+    max-width: 1440px;
+    width: 100%;
+}
+.section3__title {
+    padding-left: 176px;
+    position: relative;
+}
+.section3__title img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.section3__title h1 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 156px;
+    color: #FFFFFF;
+}
+.section3__list {
+    margin-top: 30px;
+    padding-left: 176px;
+    padding-right: 144px;
+}
+.section3__li {
+    margin-bottom: 70px;
+    display: flex;
+    position: relative;
+}
+.section3__li .text {
+    margin-left: 25px;
+}
+.section3__li .text p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.section3__li .pos {
+    position: absolute;
+    left: -15px;
+    bottom: -98px;
+}
+.section4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 119px;
+}
+.section4 .wrapper {
+    max-width: 1440px;
+    width: 100%;
+}
+.section4__title {
+    padding-left: 176px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.section4__title img {
+    margin-left: 28px;
+}
+.section4__title .pos {
+    position: absolute;
+    right: 90px;
+    bottom: -30px;
+}
+.section4__title h1 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 135px;
+    color: #FFFFFF;
+}
+form .section4__title h1:last-child {
+    margin-left: 26px;
+}
+.section4__form {
+    margin-top: 50px;
+    padding-left: 176px;
+    max-width: 688px;
+    width: 100%;
+}
+/* .section4__form form {
+    width: 100%;
+} */
+.section4__form .input {
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+.section4__form .input input {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 0px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    background: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+	-moz-appearance: none;
+}
+.section4__check {
+    padding-left: 176px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 116px;
+    grid-row-gap: 27px;
+}
+.section4__check .card {
+    position: relative;
+}
+.section4__check .card input {
+    position: absolute;
+}
+.section4__check .card label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.section4__check .card label p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    margin-left: 15px;
+}
+.section4__check .card input:checked + label p {
+    color: #5454D4;
+    opacity: 1;
+}
+.section4__check .card input:checked + label svg path {
+    fill: #5454D4;
+    fill-opacity: 1;
+}
+.txta {
+    width: 100%;
+    max-width: 100%;
+    min-height: 70px;
+    font-family: 'Nunito Sans';
+    font-weight: 200;
+    font-size: 25px;
+    opacity: 0.5;
+    color: #FFFFFF;
+    overflow: hidden;
+    line-height: 1.4;
+    outline: none;
+	-moz-appearance: none;
+    background: transparent;
+    border: none;
+}
+
+.section4__form .input p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 0px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.section4__form .btn-form {
+    display: flex;
+}
+.section4__form .btn-form .btn {
+    position: relative;
+    cursor: pointer;
+}
+.section4__form .btn-form .btn input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.section4__form .btn-form #btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 213px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4__form .btn-form p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.section4__form .btn-form #btn label {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 0;
+}
+.section4__btn {
+    margin-top: 70px;
+    display: flex;
+    padding-left: 176px;
+}
+.section4__btn button {
+    cursor: pointer;
+    width: 201px;
+    height: 54px;
+    background: #5454D4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+.section4__btn .text-btn {
+    max-width: 527px;
+    width: 100%;
+    margin-left: 58px;
+}
+.section4__btn .text-btn p {
+    width: 100%;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.section4__btn .text-btn p a {
+    color: #5454D4;
+    text-decoration: none;
+}
+.section4__title .logo2 {
+    display: none;
+}
+.section4__title h1.ad {
+    display: none;
+}
+@media (max-width: 1100px) {
+    .section1__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: repeat(2, 316px);
+        grid-template-rows: repeat(5, auto);
+    }
+    .section1__card:last-child {
+        margin-left: calc(100% + 35px - 158px);
+    }
+}
+@media (max-width: 1024px) {
+    .section2__title h1,
+    .section3__title h1,
+    .section4__title h1 {
+        font-size: 40px;
+        line-height: 100px;
+    }
+    .section2__subtitle h2 {
+        font-size: 32px;
+        line-height: 80px;
+    }
+    .section2__title,
+    .section2__subtitle,
+    .section2__list,
+    .section2__text,
+    .section3__title,
+    .section3__list,
+    .section4__title,
+    .section4__form,
+    .section4__check,
+    .section4__btn {
+        padding-left: 100px;
+    }
+    .section2__li .right p,
+    .section2__text p,
+    .section3__li .text p,
+    .section4__form .input p {
+        font-size: 24px;
+        line-height: 37px;
+    }
+}
+@Media (max-width: 900px) {
+    .section2__title,
+    .section2__subtitle,
+    .section2__list,
+    .section2__text,
+    .section3__title,
+    .section3__list,
+    .section4__title,
+    .section4__form,
+    .section4__check,
+    .section4__btn {
+        padding-left: 40px;
+    }
+    .section1__title h1 {
+        font-size: 100px;
+    }
+    .section4__check {
+        grid-column-gap: 50px;
+    }
+    .section2__title h1, .section3__title h1, .section4__title h1 {
+        font-size: 35px;
+    }
+    .section4__title .logo1 {
+        display: none;
+    }
+    .section4__title .logo2 {
+        display: block;
+    }
+    .section4__title .pos {
+        right: 30px;
+        bottom: -50px;
+    }
+}
+@media (max-width: 767px) {
+    .section4__check {
+        grid-template-columns: repeat(1, 320px);
+        grid-template-rows: repeat(6, auto);
+        justify-content: center;
+    }
+    .section4__btn {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .section4__btn .text-btn {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .section1__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: repeat(1, 316px);
+        grid-template-rows: repeat(9, auto);
+    }
+    .section1__card:last-child {
+        margin-left: 0;
+    }
+}
+@media (max-width: 688px) {
+    .section4__form {
+        max-width: 100%;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media (max-width: 600px) {
+    .section1__title h1 {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    .section1__content {
+        margin-top: 0;
+    }
+    .section1__title  {
+        margin-top: 25px;
+    }
+    .section1__title h2 {
+        line-height: 100px;
+    }
+    .section1__title .line {
+        top: 10px;
+    }
+    .section1 {
+        padding-bottom: 40px;
+    }
+    .section2__title, .section2__subtitle, .section2__list, .section2__text, .section3__title, .section3__list, .section4__title, .section4__form, .section4__check, .section4__btn {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .section2__title h1, .section3__title h1, .section4__title h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .section2__subtitle {
+        margin-top: 20px;
+    }
+    .section2__subtitle h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .section2__subtitle h2 img {
+        top: -90px;
+    }
+    .section2__li .left .line {
+        width: 50px;
+    }
+    .section2__li .left img {
+        width: 15px;
+    }
+    .section2__li .right {
+        margin-left: 20px;
+    }
+    .section2__li .right p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section2__list {
+        margin-top: 30px;
+    }
+    .section2__text p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .section2__text p img {
+        left: auto;
+        right: 30px;
+    }
+    .section3__title {
+        margin-top: 20px;
+    }
+    .section3__title img {
+        width: 60px;
+        bottom: -20px;
+        right: 30px;
+    }
+    .section3__li .text {
+        margin-left: 15px;
+    }
+    .section3__li .text p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section3__li {
+        margin-bottom: 30px;
+    }
+    .section4__title {
+        margin-top: 30px;
+    }
+    .section3__li .pos {
+        bottom: -60px;
+    }
+    .section4__form .btn-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section4__form .btn-form p {
+        margin-left: 0;
+    }
+    .section4__form .btn-form #btn {
+        width: 100%;
+    }
+    .section4__title .logo2 {
+        display: none;
+    }
+    .section4__title .pos {
+        width: 60px;
+    }
+    .section4__title h1.ad1 {
+        display: none;
+    }
+    .section4__title h1.ad {
+        display: block;
+    }
+    .section1__title h2 {
+        font-size: 30px;
+    }
+    .section1__title h2 img {
+        width: 60px;
+        left: -60px;
+    }
+    .section4__check .card label p {
+        font-size: 18px;
+    }
+    .section4__check {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, auto);
+        justify-content: center;
+    }
+    .section4 {
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 370px) {
+    .section2__li .left .line {
+        display: none;
+    }
+    .section2__title img {
+        width: 60px;
+    }
+    .section2__subtitle h2 img {
+        width: 60px;
+    }
+}
